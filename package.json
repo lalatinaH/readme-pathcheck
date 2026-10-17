@@ -1,0 +1,25 @@
+{
+  "name": "readme-pathcheck",
+  "version": "0.1.0",
+  "description": "Offline Markdown link checks with exact filename casing on every operating system.",
+  "type": "module",
+  "bin": { "readme-pathcheck": "bin/readme-pathcheck.js" },
+  "exports": "./src/check.js",
+  "files": ["bin/", "src/", "README.md", "README.zh-Hant.md", "CONTRIBUTING.md", "CHANGELOG.md", "ROADMAP.md", ".github/workflows/ci.yml", "LICENSE"],
+  "scripts": {
+    "test": "node --test",
+    "check": "node bin/readme-pathcheck.js .",
+    "demo": "node scripts/demo.js"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "github-slugger": "2.0.0",
+    "markdown-it": "15.0.3"
+  },
+  "license": "MIT",
+  "author": "lalatinaH",
+  "repository": { "type": "git", "url": "https://github.com/lalatinaH/readme-pathcheck.git" },
+  "bugs": { "url": "https://github.com/lalatinaH/readme-pathcheck/issues" },
+  "homepage": "https://github.com/lalatinaH/readme-pathcheck#readme",
+  "keywords": ["markdown", "readme", "links", "offline", "case-sensitive", "documentation"]
+}
